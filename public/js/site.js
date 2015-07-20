@@ -21,7 +21,7 @@ $(function() {
         tilejson, newTilejson, baseTilejson,
         mm = com.modestmaps,
         basemap = 'gfdrr-labs.map-44bl16ot',
-        layer = 'fews-net.sahel-fewsnet-foodsecurity-apriljune-2012',
+        layer = '',
         urlBase = 'http://api.tiles.mapbox.com/v3/',
         url = urlBase + basemap + ',' + layer + '.jsonp';
 
