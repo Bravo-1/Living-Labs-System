@@ -30,7 +30,7 @@ $(function() {
         wax.tilejson(urlBase + basemap + '.jsonp', function(baseTilejson) {
             b = new mm.Map('map-bg',
                 new wax.mm.connector(baseTilejson));
-            b.setCenterZoom(new mm.Location(15, -1), 4);
+            b.setCenterZoom(new mm.Location(-6.1731, 35.7419), 4);
         });
     }
 
@@ -52,7 +52,7 @@ $(function() {
 
         legend = wax.mm.legend(m, tilejson).appendTo(m.parent);
         wax.mm.zoomer(m, tilejson).appendTo(m.parent);
-        m.setCenterZoom(new mm.Location(15, -1), 4);
+        m.setCenterZoom(new mm.Location(-6.1731, 35.7419), 4);
         m.setZoomRange(4, 10);
 
         var bw = wax.mm.bwdetect(m, {
