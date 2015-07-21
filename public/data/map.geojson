@@ -1,0 +1,52 @@
+ [
+  {
+    "type": "Feature",
+    "name":"Dar Es Salaam LivingLabs",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [39.253012,-6.787154]
+    },
+    "properties": {
+      "marker-color": "#888",
+      "marker-size": "large"
+    }
+  },
+  {
+    "type": "Feature",
+    "name":"Iringa LivingLab",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [35.699901,-7.781689]
+    },
+    "properties": {
+      "marker-color": "#888",
+      "marker-size": "large"
+    }
+  },
+  {
+    "type": "Feature",
+    "name":"Mbeya",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [33.438703,
+          -8.889376]
+    },
+    "properties": {
+      "marker-color": "#888",
+      "marker-size": "large"
+    }
+  },
+  {
+    "type": "Feature",
+    "name":"Mbeya",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [32.655334,
+          -2.639397]
+    },
+    "properties": {
+      "marker-color": "#888",
+      "marker-size": "large"
+    }
+  }
+]
