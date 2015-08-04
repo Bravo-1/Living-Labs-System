@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset=utf-8 />
+    <title>Tanzania Living Labs</title>
+    <meta name="description" content="A simple app that maps out projexts and help in data visualization">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/IE7.css">
+   <![endif]-->
+    <link rel="stylesheet" href="css/leaflet-sidebar.css" />
+    <link href='http://fonts.googleapis.com/css?family=Cabin:200,400,600' rel='stylesheet'>
+    <link rel='stylesheet' href='css/style.css'/>
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/IE7.css">
+   <![endif]-->
+    <script type="text/javascript">
+    var badIE = false;
+    </script>
+    <!--[if IE 7]>
+  <script type="text/javascript">var badIE = true;</script>
+  <![endif]-->
+    <!--[if IE 8]>
+  <script type="text/javascript">var badIE = true;</script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#project" role="tab"><i class="fa fa-tasks"></i></a></li>
+                <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+                <li><a href="#location" role="tab"><i class="fa fa-map-marker"></i></a></li>
+                <li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header">
+                    Tanzania LivingLabs
+                    <div class="sidebar-close"><i class="fa fa-caret-left"></i></div>
+                </h1>
+                 <p >LL living lab network project is an online visual tool that presents the evolution of the different Tanzanian LLs as well as their goals, objectives, challenges and programmes. It allows its members to focus on their objectives and gather ideas from others. It is also a tool for funders to evaluate the effectiveness of the LLs in using funds and attain sustainability</p>
+
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                
+            </div>
+
+            <div class="sidebar-pane" id="profile">
+                <h1 class="sidebar-header">Signin<div class="sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+            <div class="sidebar-pane" id="project">
+                <h1 class="sidebar-header">Projects<div class="sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+
+            <div class="sidebar-pane" id="messages">
+                <h1 class="sidebar-header">Messages<div class="sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+            <div class="sidebar-pane" id="location">
+                <h1 class="sidebar-header">Location<div class="sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+
+            <div class="sidebar-pane" id="settings">
+                <h1 class="sidebar-header">Settings<div class="sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="js/leaflet-sidebar.js"></script>
+
+    <script>
+        var map = L.map('map');
+        map.setView([-5.018061, 32.826279], 6);
+
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var marker = L.marker([-5.018061, 32.826279]).addTo(map);
+
+        var sidebar = L.control.sidebar('sidebar').addTo(map);
+    </script>
+</body>
+
+</html>
