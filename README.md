@@ -1,4 +1,4 @@
-heroku-node
-===========
+Tanzania Living Labs
+=================================
 
-Code for the tutorial by @sevilayha: Deploying Node Apps to Heroku
+LL living lab network project is an online visual tool that presents the evolution of the different Tanzanian LLs as well as their goals, objectives, challenges and programmes.
