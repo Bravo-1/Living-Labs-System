@@ -8,7 +8,8 @@
     },
     "properties": {
       "marker-color": "#888",
-      "marker-size": "large"
+      "marker-size": "large",
+        "popupContent": "This is where the Rockies play!"
     }
   },
   {
@@ -20,7 +21,8 @@
     },
     "properties": {
       "marker-color": "#888",
-      "marker-size": "large"
+      "marker-size": "large",
+        "popupContent": "This is where the Rockies play!"
     }
   },
   {
@@ -33,7 +35,8 @@
     },
     "properties": {
       "marker-color": "#888",
-      "marker-size": "large"
+      "marker-size": "large",
+        "popupContent": "This is where the Rockies play!"
     }
   },
   {
@@ -46,7 +49,8 @@
     },
     "properties": {
       "marker-color": "#888",
-      "marker-size": "large"
+      "marker-size": "large",
+        "popupContent": "This is where the Rockies play!"
     }
   }
 ]
